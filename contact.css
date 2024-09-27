@@ -8,21 +8,15 @@ body{
     display:flex;
     background-color: rgb(18, 18, 78);
     justify-content: space-between;
-    height: 10%;
-    width: 100%;
 }
 
 .Header .left{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
     font-size: 2em;
     margin-left: 2em;
 }
 
 .Header .right{
-    display:flex;
-    flex-direction: row;
+    display:inline-flex;
     justify-content: end;
     font-size: 1.5em;
     align-items: center;
@@ -60,4 +54,17 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 1300px){
+    .Contact {
+        font-size:2em;
+        margin:15%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .Contact{
+        font-size:150%;
+    }
 }

@@ -8,21 +8,15 @@ body{
     display:flex;
     background-color: rgb(18, 18, 78);
     justify-content: space-between;
-    height: 10%;
-    width: 100%;
 }
 
 .Header .left{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;
     font-size: 2em;
     margin-left: 2em;
 }
 
 .Header .right{
-    display:flex;
-    flex-direction: row;
+    display:inline-flex;
     justify-content: end;
     font-size: 1.5em;
     align-items: center;
@@ -42,7 +36,6 @@ body{
     margin : 20em;
     margin-top:7em;
     margin-bottom:10em;
-    justify-content: center;
     border: solid .5em rgb(34, 34, 90);
     border-radius: 15px;
     background-color: rgb(48, 48, 129);
@@ -52,7 +45,7 @@ body{
 }
 
 .Body p{
-    font-size:1.75em;
+    font-size:1.5em;
     margin:1em;
     background-color: white;
     color:black;
@@ -80,4 +73,15 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media screen and (max-width : 1400px){
+    .Body{
+        flex-direction: column;
+        align-items: center;
+        margin:20%;
+    }
+    .Body img{
+        width:70%
+    }
 }
