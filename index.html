@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href= "index.css">
+    <script src ="index.js" defer> </script>
+</head>
+<body>
+    <div id = "Calculator-Container">
+        <div class = "Header">
+            <p id = "Course"> Course (Optional) </p>
+            <p id = "Grade"> Grade </p>
+            <p id = "Credits"> Credits </p>
+        </div>
+        <div class = "Selected-Course">
+            <input type="checkbox" id = "check" checked>
+            <input type = "text" placeholder = "Course Name" id = "course-name">
+            <select name = "grade" id = "grade">
+                <option value = ""> </option>
+                <option value = "4.0"> A+ </option>
+                <option value = "4.0"> A </option>
+                <option value = "3.7"> A- </option>
+                <option value = "3.3"> B+ </option>
+                <option value = "3.0"> B </option>
+                <option value = "2.7"> B- </option>
+                <option value = "2.3"> C+ </option>
+                <option value = "2.0"> C </option>
+                <option value = "1.7"> C- </option>
+                <option value = "1.3"> D+ </option>
+                <option value = "1.0"> D </option>
+                <option value = ".7"> D- </option>
+                <option value = "0.0"> F</option>
+            </select>
+            <input type = "text" id = "credit"> 
+            <button id= "close" type="button" onclick = "removeCourse(this)">&#x2715; </button>
+        </div>
+    </div>
+    <button id = "add-row" onclick="addCourse()"> &#x2b; Add Row </button> <br>
+    <button onclick = "calcGPA()"> = Calculate</button>
+    <button onclick = "reset()"> &#x2715; Reset </button>
+    <div class = "gpa-section">
+        <p id = "gpa"> GPA </p>
+        <p id = "display-gpa"> </p>
+    </div>
+</body>
+</html>

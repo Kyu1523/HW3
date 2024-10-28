@@ -1,0 +1,44 @@
+body{
+    margin:auto;
+    margin-top: 10px;
+    width: 50%;
+    background-color: rgba(187, 187, 187, 0.507);
+}
+
+#Calculator-Container{
+    color:rgb(255, 255, 255);
+    background-color:rgb(8, 8, 8);
+    border-radius: 15px;
+    padding:10px;
+}
+.Header{
+    font-size:5vh;
+    display:grid;
+    grid-template-columns: 1.8fr 1fr 1fr;
+    text-align: center;
+}
+.Selected-Course{
+    display:grid;
+    grid-template-columns: .1fr 1.9fr 1fr 1fr .1fr;
+}
+.Selected-Course input{
+    padding:1%;
+}
+
+#add-row{
+    width:30vh;
+}
+
+.gpa-section{
+    width: 40%;
+    margin:auto;
+    height: 80px;
+    background-color: white;
+    border-radius: 15px;
+    border:5px black solid;
+}
+.gpa-section p{
+    text-align: center;
+    font-size:4vh;
+    margin:0px;
+}
